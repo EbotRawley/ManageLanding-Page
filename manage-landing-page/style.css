@@ -477,7 +477,7 @@ button:hover {
     .links {
         right: 0;
         margin: 0;
-        top: 40px;
+        top: 50px;
         z-index: 8;
         width: 40%;
         padding: 10px;
@@ -492,25 +492,28 @@ button:hover {
         left: 8%;
         width: 85%;
         display: flex;
-        margin: 15% 0;
-        background: red;
+        margin: 10% 0;
         position: absolute;
         border-radius: 5px;
         flex-direction: column;
+        background: var(--neutral-4);
     }
 
     .links a {
-        margin: 0 0 4% 0;
-        padding: 5% 0;
+        padding: 6% 0;
     }
 
     .menu_overlay {
         z-index: 5;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: none;
-        position: absolute;
-        background: rgba(0, 0, 0, 1);
+        position: fixed;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.6) 100%);
+    }
+
+    .menu_overlay.ovl {
+        display: block;
     }
 
     .links button {
@@ -529,6 +532,10 @@ button:hover {
         width: 90%;
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .section1 {
+        margin-bottom: 20%;
     }
 
     .section1 .left-col {
@@ -654,6 +661,19 @@ button:hover {
         margin: 20px 0;
     }
 
+    .bg1 {
+        top: -1%;
+        right: -8%;
+        width: 100%;
+    }
+
+    .bg2 {
+        top: 14%;
+        left: 70%;
+        width: 70%;
+        z-index: -999;
+    }
+
     .bg4 {
         display: none;
     }
@@ -669,33 +689,33 @@ button:hover {
         flex-direction: column-reverse;
     }
 
-    .inner_footer .col{
+    .inner_footer .col {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .inner_footer .col4 .form{
+    .inner_footer .col4 .form {
         align-self: center;
         justify-self: center;
         justify-content: center;
     }
-    
-    .inner_footer .col4 .form button{
+
+    .inner_footer .col4 .form button {
         padding: 0 10%;
         margin-right: 2%;
     }
-    
-    .inner_footer .col1{
+
+    .inner_footer .col1 {
         margin: 5% 0;
         display: flex;
         align-items: center;
     }
 
-    .inner_footer .col .logof{
+    .inner_footer .col .logof {
         margin: 10% 0 20% 0;
     }
 
-    .inner_footer .col .socials{
+    .inner_footer .col .socials {
         margin: 5% 0;
         width: 100%;
         gap: 10%;
@@ -704,19 +724,19 @@ button:hover {
         justify-content: center;
     }
 
-    .inner_footer .socials i{
+    .inner_footer .socials i {
         font-size: 1.3rem;
     }
 
-    .inner_footer .fl > div{
+    .inner_footer .fl>div {
         align-items: center;
     }
 
-    .inner_footer .col .footer_links{
+    .inner_footer .col .footer_links {
         line-height: 40px;
     }
 
-    .copyright{
+    .copyright {
         left: 50%;
         width: 100%;
         bottom: 1%;
