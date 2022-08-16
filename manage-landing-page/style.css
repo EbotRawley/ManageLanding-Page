@@ -203,6 +203,14 @@ button:hover {
     width: 85%;
 }
 
+.section .left-col p{
+    margin-top: 5%;
+}
+
+.section2 p {
+    color: var(--neutral-1);
+}
+
 .section2 .right-col {
     gap: 8%;
     display: flex;
